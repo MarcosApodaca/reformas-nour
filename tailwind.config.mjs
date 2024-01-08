@@ -4,8 +4,14 @@ export default {
 	theme: {
 		extend: {
 			backgroundImage:{
-				'hero-pattern': "url('./src/img/logo-nour.png')"
-			}
+				'hero-pattern': "url('./src/img/reforma.jpg')",
+				'main-bg': "url('./src/img/r.jpg')",
+				'alicatado':"url('./src/img/alicatado.jpg')",
+				'pladur':"url('./src/img/pladur.jpg')"
+			},
+			fontFamily: {
+                custom: ['Raleway-ExtraBold', 'sans-serif']
+            }
 		},
 	},
 	plugins: [],

@@ -6,13 +6,37 @@ import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Welcome to Astro.">
+	<hero class="mt-40 mx-auto max-w-6xl grid grid-cols-3 ">
+		<div class=" max-w-2xl p-5 col-start-1 col-end-3 bg-white">
+			<h1 class=" font-custom font-extrabold text-7xl text-orange-500  ">Sobre Nosotros</h1>
+			<p class=" font-custom font-extralight  text-xl mt-2 ">Bienvenido a Reformas Nour, tu socio confiable en el mundo de las transformaciones para hacer de tu espacio un lugar único y funcional. </p>
+			<p class=" font-custom font-extralight  text-xl mt-2">En Reformas Nour, nos enorgullece ofrecer una gama completa de servicios de alta calidad para satisfacer todas tus necesidades de reforma y construcción. </p>
+			<p class=" font-custom font-extralight   text-xl mt-2">Desde alicatados y albañilería hasta instalaciones eléctricas y fontanería, nuestro equipo de expertos está aquí para hacer realidad tus sueños de diseño y renovación.</p>
+		</div>
+		<video class="h-[35rem] aspect-w-9 aspect-h-16 object-cover w-full" autoplay muted loop>
+			<source src="./src/img/video.mp4" type="video/mp4">
+		</video>
+	</hero>
 
-	<main class="">
-		<div class=" grid grid-cols-2 grid-rows-2">
-			<img src="./src/img/istockphoto-959332690-2048x2048.jpg" class="  w-80" alt="">
-			<p class=" text-3xl uppercase col-span-2">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Velit vitae doloribus cumque dolores minus laborum aut iure, magnam praesentium cupiditate? Ut necessitatibus porro mollitia odit delectus, soluta at repellendus consequatur?</p>
+	<main class="max-w-6xl mx-auto mt-40 ">
+		<h2 class=" text-orange-500 font-custom font-extrabold text-5xl text-center uppercase mb-40">Nuestos servicios</h2>
+		<div class="grid grid-cols-2 grid-rows-2 bg-alicatado bg-no-repeat background-position: center bottom 20%;">
+			<div class=" col-start-2 bg-white p-8">
+				<h2 class=" font-custom font-extrabold text-5xl text-orange-500">Alicatado y Solado</h2>
+				<p>En Reformas Nour, nos enorgullece ofrecer servicios excepcionales de alicatado y solado, transformando tus espacios en áreas de belleza y funcionalidad. </p>
+				<p class="mt-2">Sabemos que la elección de los revestimientos es crucial para la estética general y la durabilidad de cualquier proyecto de reforma, y es por eso que nos comprometemos a ofrecer soluciones de alta calidad que superen tus expectativas.</p>
+			</div>
+		</div>
+
+		<div class="mt-32 grid grid-cols-2 grid-rows-2 bg-pladur bg-no-repeat background-position: center bottom 20%;">
+			<div class=" bg-white p-8 ">
+				<h2 class=" font-custom font-extrabold text-5xl text-orange-500">Escayola y Colocación de Pladur</h2>
+				<p>Ofrecemos servicios de escayola y colocación de Pladur que van más allá de simples elementos arquitectónicos, brindando a tus espacios un toque de elegancia y versatilidad incomparables. </p>
+				<p class="mt-2">Nuestra dedicación a la excelencia se refleja en la maestría con la que abordamos cada proyecto, transformando tus ideas en piezas de arte arquitectónico que realzan la belleza y funcionalidad de tus ambientes.</p>
+			</div>
 		</div>
 	</main>
+	
 </Layout>
 
 
