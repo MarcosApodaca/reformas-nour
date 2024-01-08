@@ -7,10 +7,11 @@ export default {
 				'hero-pattern': "url('./src/img/reforma.jpg')",
 				'main-bg': "url('./src/img/r.jpg')",
 				'alicatado':"url('./src/img/alicatado.jpg')",
-				'pladur':"url('./src/img/pladur.jpg')"
+				'pladur':"url('./src/img/pladur.jpg')",
+				'tarima':"url('./src/img/tarima.jpg')"
 			},
 			fontFamily: {
-                custom: ['Raleway-ExtraBold', 'sans-serif']
+                custom: ['Raleway', 'sans-serif']
             }
 		},
 	},
