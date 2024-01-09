@@ -8,7 +8,8 @@ export default {
 				'main-bg': "url('./src/img/r.jpg')",
 				'alicatado':"url('./src/img/alicatado.jpg')",
 				'pladur':"url('./src/img/pladur.jpg')",
-				'tarima':"url('./src/img/tarima.jpg')"
+				'tarima':"url('./src/img/tarima.jpg')",
+				'hero':"url('./src/img/hero.jpg')"
 			},
 			fontFamily: {
                 custom: ['Raleway', 'sans-serif']
