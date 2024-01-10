@@ -5,44 +5,45 @@ import MasInformacion from '../components/MasInformacion.astro'
 
 <Layout title="Welcome to Astro.">
 	
-	<hero class=" bg-hero bg-bottom w-screen h-[40rem] bg-no-repeat bg-cover  flex items-center">
-		<div class=" grid grid-cols-2  grid-rows-2  mx-auto max-w-6xl">
-			<div class="">
-			<p class=" text-white font-custom">Bienvenido a</p>
+	<hero class=" bg-hero bg-bottom w-screen h-[40rem] bg-no-repeat bg-cover flex items-center">
+		<div class="mx-auto max-w-6xl max-sm:max-w-xs">
+			<div class="flex flex-col items-start content-start">
+			<p class=" gap-0 text-white font-custom  ">Bienvenido a</p>
 			<h1 class=" text-stroke font-custom font-extrabold uppercase items-center text-black text-5xl">Reformas <span class=" text-stroke text-orange-500">Nour</span> </h1>
 			<p class=" leading-6 font-custom text-white mb-5 font-bold">Estamos aquí para convertir tus ideas en realidad. Si estás planeando una reforma integral o simplemente deseas realizar mejoras específicas, Reformas Nour es tu socio ideal. Ponte en contacto con nosotros para discutir tus proyectos y recibir un presupuesto personalizado.</p>
-			<a href="#" class=" bg-orange-500 hover:bg-white hover:text-orange-500 transition  duration-500 p-2 text-white font-extrabold uppercase"> Contacto</a>
+			<a href="/formulario" class=" w-28 bg-orange-500 hover:bg-white hover:text-orange-500 transition  duration-500 p-2 text-white font-extrabold uppercase"> Contacto</a>
 			</div>
 		</div>
 
 	</hero>
 
-	<section class=" mt-[4rem] mx-auto max-w-6xl grid grid-cols-3 ">
+	<section class=" mt-[4rem] mx-auto max-w-6xl max-sm:max-w-sm grid grid-cols-3 max-sm:flex max-sm:flex-col">
 		<div class=" max-w-2xl p-5 col-start-1 col-end-3 ">
-			<h1 class=" mb-12 font-custom font-extrabold text-7xl text-orange-500  ">Sobre Nosotros</h1>
+			<h2 class=" mb-12 font-custom font-extrabold text-7xl text-orange-500 max-sm:text-6xl max-sm:text-center">Sobre Nosotros</h2>
 			<p class=" font-custom font-extralight leading-8 text-xl mt-2 ">Bienvenido a Reformas Nour, tu socio confiable en el mundo de las transformaciones para hacer de tu espacio un lugar único y funcional. </p>
 			<p class=" font-custom font-extralight leading-8 text-xl mt-2">En Reformas Nour, nos enorgullece ofrecer una gama completa de servicios de alta calidad para satisfacer todas tus necesidades de reforma y construcción. </p>
 			<p class=" font-custom font-extralight leading-8 text-xl mt-2">Desde alicatados y albañilería hasta instalaciones eléctricas y fontanería, nuestro equipo de expertos está aquí para hacer realidad tus sueños de diseño y renovación.</p>
 		</div>
-		<video class="h-[35rem] aspect-w-9 aspect-h-16 object-cover w-full" autoplay muted loop>
+		<video class="h-[35rem] max-sm:h-[16rem] aspect-w-9 aspect-h-16 object-cover w-full" autoplay muted loop>
 			<source src="./src/img/video.mp4" type="video/mp4">
 		</video>
 	</section>
 
 	<main class="max-w-6xl mx-auto mt-40 mb-20 "> 
-		<h2 class=" uppercase  text-orange-500 font-custom font-extrabold after:border-b-2 after:border-b-orange-500 text-5xl text-start mb-20">Nuestos servicios</h2>
-		<div class="grid grid-cols-2 grid-rows-2 bg-alicatado bg-no-repeat bg-cover bg-right-top">
-			<div class=" col-start-1 row-start-2 bg-white p-8">
-				<h2 class=" mb-12 font-custom font-extrabold text-5xl text-orange-500">Alicatado y Solado</h2>
+		<h2 class=" uppercase  text-orange-500 font-custom font-extrabold after:border-b-2 after:border-b-orange-500 text-5xl text-start mb-20 max-sm:text-center max-sm:text-4x1">Nuestos servicios</h2>
+		<div class="grid grid-cols-2 grid-rows-2 max-sm:flex max-sm:flex-col max-sm:bg-none bg-alicatado bg-no-repeat bg-cover bg-right-top">
+			<div class=" col-start-1 row-start-2 bg-white p-8 max-sm:bg-transparent">
+				<h2 class=" mb-12 font-custom font-extrabold text-5xl max-sm:text-3xl max-sm:text-center  text-orange-500">Alicatado y Solado</h2>
 				<p class="font-custom leading-7">En Reformas Nour, nos enorgullece ofrecer servicios excepcionales de alicatado y solado, transformando tus espacios en áreas de belleza y funcionalidad. </p>
 				<p class="mb-4 font-custom mt-2 leading-7">Sabemos que la elección de los revestimientos es crucial para la estética general y la durabilidad de cualquier proyecto de reforma, y es por eso que nos comprometemos a ofrecer soluciones de alta calidad que superen tus expectativas.</p>
 				<MasInformacion />
 			</div>
+			<img src="./src/img/alicatado.jpg" class=" sm:hidden" alt="">
 		</div>
-		<div class="mt-32 grid grid-cols-2">
-			<img class=" m-0 h-4/5" src="./src/img/tarima.jpg" alt="">
-			<div class=" col-start-2 bg-white ">
-				<h2 class="  mb-12 font-custom font-extrabold text-5xl text-orange-500">Carpintería y Tarima</h2>
+		<div class="max-sm:max-w-xs max-sm:mx-auto mt-32 grid grid-cols-2 max-sm:flex max-sm:flex-col max-sm:mb-12">
+			<img class=" m-0 h-4/5 max-sm:hidden" src="./src/img/tarima.jpg" alt="">
+			<div class=" col-start-2 bg-white  max-sm:bg-none ">
+				<h2 class="  mb-12 font-custom font-extrabold text-5xl max-sm:text-3xl max-sm:text-center text-orange-500">Carpintería y Tarima</h2>
 				<p class=" font-custom mt-2 leading-7">En Reformas Nour, elevamos la carpintería y la instalación de tarima a un nivel superior, ofreciéndote una fusión perfecta de elegancia artesanal y calidez natural. </p>
 				<p class="font-custom leading-7 mt-2 mb-3">Nos enorgullece presentar servicios que van más allá de lo convencional, creando elementos de carpintería personalizados y suelos de tarima que transforman tus espacios en expresiones auténticas de estilo y confort.</p>
 				<MasInformacion/>
@@ -53,22 +54,22 @@ import MasInformacion from '../components/MasInformacion.astro'
 			
 		</div>
 
-		<div class="grid grid-cols-2">
-			<div class=" bg-white px-8 pb-8">
-				<h2 class="  mb-12 font-custom font-extrabold text-5xl text-orange-500">Electricidad y Fontaneria</h2>
+		<div class="grid grid-cols-2 max-sm:flex max-sm:flex-col ">
+			<div class=" bg-white px-8 pb-8 max-sm:mb-12">
+				<h2 class="  mb-12 font-custom font-extrabold text-5xl max-sm:text-3xl max-sm:text-center text-orange-500">Electricidad y Fontaneria</h2>
 				<p class=" font-custom leading-7">Ofrecemos servicios de escayola y colocación de Pladur que van más allá de simples elementos arquitectónicos, brindando a tus espacios un toque de elegancia y versatilidad incomparables. </p>
 				<p class="font-custom mt-2 mb-3 leading-7">Nuestra dedicación a la excelencia se refleja en la maestría con la que abordamos cada proyecto, transformando tus ideas en piezas de arte arquitectónico que realzan la belleza y funcionalidad de tus ambientes.</p>
 				<MasInformacion/>
-				<video class="h-[20rem] mt-10  object-cover w-full" autoplay muted loop>
+				<video class="h-[20rem] max-sm:h-auto mt-10  object-cover w-full" autoplay muted loop>
 					<source src="./src/img/fontaneria.mp4">
 				</video>
 			</div>
 			<div class=" bg-white px-8 pb-8  ">
-				<h2 class="  mb-12 font-custom font-extrabold text-5xl text-orange-500">Colocación de Pladur</h2>
+				<h2 class="  mb-12 font-custom font-extrabold text-5xl max-sm:text-3xl max-sm:text-center text-orange-500">Colocación de Pladur</h2>
 				<p class=" font-custom leading-7">Ofrecemos servicios de escayola y colocación de Pladur que van más allá de simples elementos arquitectónicos, brindando a tus espacios un toque de elegancia y versatilidad incomparables. </p>
 				<p class="font-custom mt-2 mb-3 leading-7">Nuestra dedicación a la excelencia se refleja en la maestría con la que abordamos cada proyecto, transformando tus ideas en piezas de arte arquitectónico que realzan la belleza y funcionalidad de tus ambientes.</p>
 				<MasInformacion/>
-				<img class="h-[20rem] mt-10 " src="./src/img/pladur.jpg" alt="">
+				<img class="h-[20rem] mt-10 max-sm:h-auto" src="./src/img/pladur.jpg" alt="">
 			</div>
 		</div>
 

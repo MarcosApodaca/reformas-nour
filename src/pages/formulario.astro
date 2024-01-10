@@ -4,7 +4,64 @@ import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="formulario">
+    <div class="flex justify-center items-center w-screen h-screen bg-white">
 
+        <div class="container mx-auto my-4 px-4 lg:px-20">
+    
+            <div class="w-full p-8 my-4 md:px-12 lg:w-9/12 lg:pl-20 lg:pr-40 mr-auto rounded-2xl shadow-2xl">
+                <div class="flex">
+                    <h1 class="font-bold uppercase text-5xl">Mandanos<br /> un mensaje</h1>
+                </div>
+                <div class="grid grid-cols-1 gap-5 md:grid-cols-2 mt-5">
+                    <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                type="text" placeholder="Nombre*" />
+                    <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                type="text" placeholder="Apellido*" />
+                    <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                type="email" placeholder="Email*" />
+                    <input class="w-full bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"
+                type="number" placeholder="Telefono*" />
+            </div>
+                    <div class="my-4">
+                        <textarea placeholder="Mensaje*" class="w-full h-32 bg-gray-100 text-gray-900 mt-2 p-3 rounded-lg focus:outline-none focus:shadow-outline"></textarea>
+                    </div>
+                    <div class="my-2 w-1/2 lg:w-1/4">
+                        <button class="uppercase text-sm font-bold tracking-wide bg-orange-500 text-gray-100 p-3 rounded-lg w-full 
+                          focus:outline-none focus:shadow-outline hover:bg-orange-700 duration-300">
+                        Enviar
+              </button>
+                    </div>
+                </div>
+    
+                <div
+                    class="w-full lg:-mt-96 lg:w-2/6 px-8 py-12 ml-auto bg-orange-500 rounded-2xl">
+                    <div class="flex flex-col text-white">
+                        <h1 class="font-bold uppercase text-4xl my-4">Contacta con Nosotros</h1>
+                        <p class=" text-black">
+                            Ponte en contacto con nosotros para discutir tus proyectos y recibir un presupuesto personalizado.
+                            En Reformas Nour, estamos comprometidos con la excelencia, la innovación y la satisfacción del cliente. 
+                            ¡Haz tus sueños de reforma realidad con nosotros!
+                        </p>
+    
+                        <div class="flex my-4 w-2/3 lg:w-1/2">
+                            <div class="flex flex-col">
+                                <i class="fas fa-map-marker-alt pt-2 pr-2" />
+                </div>
+               
+              <div class="flex my-4 w-2/3 lg:w-1/2">
+                <div class="flex flex-col">
+                  <i class="fas fa-phone-alt pt-2 pr-2" />
+                </div>
+                <div class="flex flex-col">
+                  <h2 class="text-2xl">Llamanos</h2>
+                  <a href="tel:+34632950927" class=" text-black"> 632950927</a>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+    </div>
 
 
 </Layout>
