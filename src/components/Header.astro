@@ -1,9 +1,5 @@
 ---
-// const menu:any= document.getElementById("menu")
-// const navMenu:any = document.getElementById("navMenu")
-// menu.addEventListener('click', () => {
-//     navMenu.classList.toggle("show")
-// })
+
 ---
 
 <header class=" z-10 px-5 shadow sticky top-0 bg-white">
@@ -17,11 +13,23 @@
             <a href="/formulario" class=" font-custom ml-2 px-2 py-1 bg-orange-500 rounded-sm text-white  hover:bg-white  transition  duration-500 hover:cursor-pointer hover:text-orange-500">FORMULARIO</a>
         </div>
         <button type="button" id="menu" class=" my-auto sm:hidden">
+            
             <img class=" w-7" src="./src/img/menu.png" alt="">
-            <div id="navMenu" class=" bg-orange-300 w-screen h-screen max-sm:hidden sm:mb-0 mb-0 self-center sm:mt-0">
-                <a href="/" class=" font-custom ml-2 px-2 py-1 bg-orange-500 rounded-sm text-white  hover:bg-white  transition  duration-500 hover:cursor-pointer hover:text-orange-500">INICIO</a>
-                <a href="/formulario" class=" font-custom ml-2 px-2 py-1 bg-orange-500 rounded-sm text-white  hover:bg-white  transition  duration-500 hover:cursor-pointer hover:text-orange-500">FORMULARIO</a>
+            
+            <div id="navMenu" class=" hidden absolute  flex-col items-baseline p-3 top-[100%]  transition-[left] left-full   bg-white bg-opacity-90 w-full  self-center ">
+                <ul class="flex flex-col items-start gap-y-2">
+                    <li>
+                        <a href="/" class="  font-custom ml-2 px-2 py-1 bg-orange-500 rounded-sm text-white  hover:bg-white  transition  duration-500 hover:cursor-pointer hover:text-orange-500">INICIO</a>
+                    </li>
+                    <li>
+                        <a href="/formulario" class="  font-custom ml-2 px-2 py-1 bg-orange-500 rounded-sm text-white  hover:bg-white  transition  duration-500 hover:cursor-pointer hover:text-orange-500">FORMULARIO</a>
+                    </li>
+                    <li class="mt-5">
+                        <a href="tel:+34632950927" class="font-custom ml-2 py-1   text-black">Llamanos 632950927</a>
+                    </li>
+                </ul>
             </div>
+            
         </button>
     </nav>
 </header>
@@ -29,6 +37,26 @@
 <style>
     .show {
         display: block;
+        left: 20%;
+        transition: left 1s;
     }
+    .hidden-nav{
+        left: 100%;
+        transition: left 1s;
+    }
+    
 
 </style>
+
+<script>
+const menu:any= document.getElementById("menu")
+const navMenu:any = document.getElementById("navMenu")
+let estado = false;
+menu.addEventListener('click', () => {
+    if(estado === false){
+        navMenu.classList.toggle("show")
+    } else {
+        navMenu.classList.toggle("hidden")
+    }
+})
+</script>
