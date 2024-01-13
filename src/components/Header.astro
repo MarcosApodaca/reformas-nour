@@ -16,7 +16,7 @@
             
             <img class=" w-7" src="./src/img/menu.png" alt="">
             
-            <div id="navMenu" class=" hidden absolute  flex-col items-baseline p-3 top-[100%]  transition-[left] left-full   bg-white bg-opacity-90 w-full  self-center ">
+            <div id="navMenu" class="hidden  absolute  flex-col items-baseline p-3 top-[100%] right-0 h-48 rounded-b-sm bg-white bg-opacity-100  ">
                 <ul class="flex flex-col items-start gap-y-2">
                     <li>
                         <a href="/" class="  font-custom ml-2 px-2 py-1 bg-orange-500 rounded-sm text-white  hover:bg-white  transition  duration-500 hover:cursor-pointer hover:text-orange-500">INICIO</a>
@@ -36,27 +36,54 @@
 
 <style>
     .show {
-        display: block;
+        display: flex;
         left: 20%;
-        transition: left 1s;
+        animation: leftt .5s ease-in-out both;
     }
-    .hidden-nav{
-        left: 100%;
-        transition: left 1s;
+    /* .hidden-nav{
+        
+        animation: regreso .1s ease-in-out both;
+        display: none;
+    } */
+
+    @keyframes regreso {
+        0%{
+            translate: 0;
+        }
+        100%{
+            translate: 100%;
+        }
     }
     
+    @keyframes leftt {
+        0%{
+            translate: 100%;
+        }
+        100%{
+            translate:0;
+        }
+
+    }
 
 </style>
 
 <script>
 const menu:any= document.getElementById("menu")
+
 const navMenu:any = document.getElementById("navMenu")
-let estado = false;
+
+// let estado = false
 menu.addEventListener('click', () => {
-    if(estado === false){
+    
+    // if(estado === false){
         navMenu.classList.toggle("show")
-    } else {
-        navMenu.classList.toggle("hidden")
-    }
+    //     estado = true
+    //    console.log(true);
+    // } else if ( estado === true) {
+    //     navMenu.classList.toggle("hidden-nav")
+    //     estado = false
+    //     console.log(false);
+    // }
+    
 })
 </script>
