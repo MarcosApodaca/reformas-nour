@@ -6,84 +6,76 @@
     <nav  class=" max-w-7xl mx-auto font-custom flex justify-between  sm:flex-row sm:text-left sm:justify-between sm:items-baseline">
         <a href="/"> 
             <span class=" hidden">Página de Reformas Nour</span>
-            <img class=" max-sm:w-32 py-2 max-sm:mb-0 max-sm:mx-auto w-52" src="./src/img/logo-nour.png" alt="Logo de la Empresa">
+            <img class=" max-sm:w-32 py-2 max-sm:mb-0 max-sm:mx-auto w-52" src="/src/img/logo-nour.png" alt="Logo de la Empresa">
         </a>
         <div class=" max-sm:hidden sm:mb-0 mb-0 self-center sm:mt-0">
             <a href="/" class=" font-custom ml-2 px-2 py-1 bg-orange-500 rounded-sm text-white  hover:bg-white  transition  duration-500 hover:cursor-pointer hover:text-orange-500">INICIO</a>
             <a href="/formulario" class=" font-custom ml-2 px-2 py-1 bg-orange-500 rounded-sm text-white  hover:bg-white  transition  duration-500 hover:cursor-pointer hover:text-orange-500">FORMULARIO</a>
         </div>
-        <button type="button" id="menu" class=" my-auto sm:hidden">
-            
-            <img class=" w-7" src="./src/img/menu.png" alt="">
-            
-            <div id="navMenu" class="hidden  absolute  flex-col items-baseline p-3 top-[100%] right-0 h-48 rounded-b-sm bg-white bg-opacity-100  ">
-                <ul class="flex flex-col items-start gap-y-2">
-                    <li>
-                        <a href="/" class="  font-custom ml-2 px-2 py-1 bg-orange-500 rounded-sm text-white  hover:bg-white  transition  duration-500 hover:cursor-pointer hover:text-orange-500">INICIO</a>
-                    </li>
-                    <li>
-                        <a href="/formulario" class="  font-custom ml-2 px-2 py-1 bg-orange-500 rounded-sm text-white  hover:bg-white  transition  duration-500 hover:cursor-pointer hover:text-orange-500">FORMULARIO</a>
-                    </li>
-                    <li class="mt-5">
-                        <a href="tel:+34632950927" class="font-custom ml-2 py-1   text-black">Llamanos 632950927</a>
-                    </li>
-                </ul>
-            </div>
-            
+        <button type="button" id="menu" class=" menu-btn my-auto sm:hidden">
+            <img id="menuIcon" class=" w-10" src="./src/img/menu.svg" alt="">
         </button>
+        <div id="navMenu" class="fixed flex flex-col items-baseline p-3 top-[91px] right-0 h-48 left-[100%] transition-[left] duration-[.5s] rounded-b-sm bg-opacity-90 bg-white ">
+            <ul class="flex flex-col items-start gap-y-2">
+                <li>
+                    <a href="/" class="  font-custom ml-2 px-2 py-1 bg-orange-500 rounded-sm text-white  hover:bg-white  transition  duration-500 hover:cursor-pointer hover:text-orange-500">INICIO</a>
+                </li>
+                <li>
+                    <a href="/formulario" class="  font-custom ml-2 px-2 py-1 bg-orange-500 rounded-sm text-white  hover:bg-white  transition  duration-500 hover:cursor-pointer hover:text-orange-500">FORMULARIO</a>
+                </li>
+                <li class="mt-5">
+                    <a href="tel:+34632950927" class="font-custom ml-2 py-1   text-black">Llamanos: <br><span class="ml-2">632950927</span></a>
+                </li>
+            </ul>
+        </div>
+            
+        
     </nav>
 </header>
 
 <style>
-    .show {
-        display: flex;
+    .show { 
         left: 20%;
-        animation: leftt .5s ease-in-out both;
+        transition: left 1s; 
     }
-    /* .hidden-nav{
-        
-        animation: regreso .1s ease-in-out both;
-        display: none;
-    } */
 
-    @keyframes regreso {
-        0%{
-            translate: 0;
-        }
-        100%{
-            translate: 100%;
-        }
-    }
-    
-    @keyframes leftt {
-        0%{
-            translate: 100%;
-        }
-        100%{
-            translate:0;
-        }
-
-    }
 
 </style>
 
 <script>
+
 const menu:any= document.getElementById("menu")
-
 const navMenu:any = document.getElementById("navMenu")
+const menuIcon = (document.getElementById("menuIcon")as HTMLImageElement )
+let estado = false
+const menuOpen = "./src/img/menu.svg"
+const menuClose = "./src/img/close.svg"
+menu.addEventListener('click', (event:any) => {
 
-// let estado = false
-menu.addEventListener('click', () => {
-    
-    // if(estado === false){
+    event.stopPropagation(); 
+    if (estado === false){
         navMenu.classList.toggle("show")
-    //     estado = true
-    //    console.log(true);
-    // } else if ( estado === true) {
-    //     navMenu.classList.toggle("hidden-nav")
-    //     estado = false
-    //     console.log(false);
-    // }
-    
+        estado = true
+        menuIcon.src = menuClose
+
+    } else if (estado === true){
+        navMenu.classList.toggle("show")
+        estado = false
+        menuIcon.src = menuOpen
+        
+    }
+   
 })
+
+document.addEventListener('click', function() {
+    
+    if(estado === true) {
+        navMenu.classList.toggle("show")
+        estado = false
+        menuIcon.src = menuOpen
+    }
+  });
+
+  
+
 </script>
