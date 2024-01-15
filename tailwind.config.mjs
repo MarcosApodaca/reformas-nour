@@ -4,10 +4,10 @@ export default {
 	theme: {
 		extend: {
 			backgroundImage:{
-				'alicatado':"url('./public/alicatado.webp')",
-				'pladur':"url('./public/pladur.webp')",
-				'tarima':"url('./public/tarima.webp')",
-				'hero':"url('./public/hero.webp')"
+				'alicatado':"url('/alicatado.webp')",
+				'pladur':"url('/pladur.webp')",
+				'tarima':"url('/tarima.webp')",
+				'hero':"url('/hero.webp')"
 			},
 			fontFamily: {
                 custom: ['Raleway', 'sans-serif']
