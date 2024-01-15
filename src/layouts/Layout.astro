@@ -2,6 +2,10 @@
 import Contacto from '../components/Contacto.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/footer.astro';
+import '@fontsource/raleway/200.css';
+import '@fontsource/raleway/500.css';
+import '@fontsource/raleway/600.css';
+import '@fontsource/raleway/800.css';
 import { ViewTransitions, fade } from "astro:transitions"
 interface Props {
 	title: string;
@@ -49,13 +53,19 @@ const { title } = Astro.props;
 		);
 	}
 	html {
-		font-family: system-ui, sans-serif;
+		font-family: 'Raleway', sans-serif;
 		background: #fff;
 		box-sizing: border-box;
 		color-scheme: light;
 	}
 	p{
 		font-size: 1.125rem;
+		font-family: 'Raleway', sans-serif;
+		font-weight: 200;
+	}
+	h1,h2,h3{
+		font-family: 'Raleway', sans-serif;
+		font-weight: 800;
 	}
 	.icon-container::before {
      content: '';
