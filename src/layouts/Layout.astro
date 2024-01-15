@@ -19,7 +19,7 @@ const { title } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="generator" content={Astro.generator} />
 		<title>{title}</title>
-		<ViewTransitions />
+		<!-- <ViewTransitions /> -->
 	</head>
 	<body  >
 		<Header/>
@@ -49,4 +49,14 @@ const { title } = Astro.props;
 	p{
 		font-size: 1.125rem;;
 	}
+	.icon-container::before {
+     content: '';
+     width: 15px;
+     height: 15px;
+     background-image: url("/telephone.png");
+     background-size: cover; /* Otra opción podría ser 'contain' según tus necesidades */
+     background-repeat: no-repeat;
+     display: inline-block; 
+     margin-right: 0.5rem; 
+    }
 </style>
