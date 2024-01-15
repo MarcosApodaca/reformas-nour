@@ -1,11 +1,10 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import MasInformacion from '../components/MasInformacion.astro'
-import hero from "../img/hero.webp"
+
 ---
 
 <Layout title="Reformas Nour" >
-	
 	<hero  class=" bg-hero bg-bottom w-screen h-[40rem] max-sm:bg-left  bg-no-repeat bg-cover flex items-center">
 		<div class="mx-auto max-w-6xl max-sm:max-w-xs">
 			<div class=" items-start content-start">
@@ -26,7 +25,7 @@ import hero from "../img/hero.webp"
 			<p class=" font-custom font-extralight leading-8 text-lg mt-2">Desde alicatados y albañilería hasta instalaciones eléctricas y fontanería, nuestro equipo de expertos está aquí para hacer realidad tus sueños de diseño y renovación.</p>
 		</div>
 		<video class="h-[35rem] max-sm:h-[16rem] aspect-w-9 aspect-h-16 object-cover w-full" autoplay muted loop>
-			<source src="./src/img/sobre-nosotros.mp4" type="video/mp4">
+			<source src="./public/sobre-nosotros.mp4" type="video/mp4">
 		</video>
 	</section>
 
@@ -39,17 +38,17 @@ import hero from "../img/hero.webp"
 				<p class="mb-4 font-custom mt-2 leading-7">Sabemos que la elección de los revestimientos es crucial para la estética general y la durabilidad de cualquier proyecto de reforma, y es por eso que nos comprometemos a ofrecer soluciones de alta calidad que superen tus expectativas.</p>
 				<MasInformacion />
 			</div>
-			<img src="./src/img/alicatado.webp" class=" sm:hidden" alt="">
+			<img src="./public/alicatado.webp" class=" sm:hidden" alt="">
 		</div>
 		<div class="max-sm:max-w-xs max-sm:mx-auto mt-32 grid grid-cols-2 max-sm:flex max-sm:flex-col max-sm:mb-32">
-			<img class=" m-0 h-4/5 max-sm:hidden" src="./src/img/tarima.webp" alt="">
+			<img class=" m-0 h-4/5 max-sm:hidden" src="./public/tarima.webp" alt="">
 			<div class=" col-start-2 bg-white  ">
 				<h2 class="  mb-12 max-sm:mb-5 font-custom font-extrabold text-5xl w-full max-sm:text-3xl max-sm:text-center text-orange-500">Carpintería y Tarima</h2>
 				<p class=" font-custom mt-2 leading-7">En Reformas Nour, elevamos la carpintería y la instalación de tarima a un nivel superior, ofreciéndote una fusión perfecta de elegancia artesanal y calidez natural. </p>
 				<p class="font-custom leading-7 mt-2 mb-3">Nos enorgullece presentar servicios que van más allá de lo convencional, creando elementos de carpintería personalizados y suelos de tarima que transforman tus espacios en expresiones auténticas de estilo y confort.</p>
 				<MasInformacion/>
 				<video class=" mt-7 row-start-2 col-start-2 object-cover w-full" autoplay muted loop>
-					<source src="./src/img/carpinteria.mp4" >
+					<source src="./public/carpinteria.mp4" >
 				</video>
 			</div>
 			
@@ -62,7 +61,7 @@ import hero from "../img/hero.webp"
 				<p class="font-custom mt-2 mb-3 leading-7">Nos consideramos artesanos de la comodidad, fusionando la tecnología moderna con prácticas sostenibles para crear entornos que no solo funcionan eficientemente, sino que también mejoran tu calidad de vida diaria.</p>
 				<MasInformacion/>
 				<video class="h-[20rem] max-sm:h-auto mt-10  object-cover w-full" autoplay muted loop>
-					<source src="./src/img/fontaneria.mp4">
+					<source src="./public/fontaneria.mp4">
 				</video>
 			</div>
 			<div class=" bg-white px-8 pb-8  ">
@@ -70,7 +69,7 @@ import hero from "../img/hero.webp"
 				<p class=" font-custom leading-7">Ofrecemos servicios de escayola y colocación de Pladur que van más allá de simples elementos arquitectónicos, brindando a tus espacios un toque de elegancia incomparables. </p>
 				<p class="font-custom mt-2 mb-3 leading-7">Nuestra dedicación a la excelencia se refleja en la maestría con la que abordamos cada proyecto, transformando tus ideas en piezas de arte arquitectónico que realzan la belleza y funcionalidad de tus ambientes.</p>
 				<MasInformacion/>
-				<img class="h-[20rem] w-full mt-10 max-sm:h-auto" src="./src/img/pladur.webp" alt="">
+				<img class="h-[20rem] w-full mt-10 max-sm:h-auto" src="./public/pladur.webp" alt="">
 			</div>
 		</div>
 
