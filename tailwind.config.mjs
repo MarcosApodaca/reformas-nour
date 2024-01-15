@@ -9,9 +9,6 @@ export default {
 				'tarima':"url('/tarima.webp')",
 				'hero':"url('/hero.webp')"
 			},
-			fontFamily: {
-                custom: ['Raleway', 'sans-serif']
-            }
 		},
 	},
 	plugins: [],
