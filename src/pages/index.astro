@@ -30,7 +30,7 @@ import MasInformacion from '../components/MasInformacion.astro'
 	</section>
 
 	<main class="max-w-6xl mx-auto mt-40 mb-20 "> 
-		<h2 class=" uppercase max-sm:mb-7  text-orange-500 font-custom font-extrabold after:border-b-2 after:border-b-orange-500 text-6xl text-center mb-20 max-sm:text-4x1 border-bottom">Nuestos servicios</h2>
+		<h2 class=" uppercase max-sm:mb-7  text-orange-500 font-custom font-extrabold after:border-b-2 after:border-b-orange-500 text-6xl text-center mb-20 max-sm:text-4x1 max-md:border-bottom sm:mb-32">Nuestos servicios</h2>
 		<div class=" max-sm:mx-auto grid grid-cols-2 grid-rows-2 max-md:flex max-md:flex-col max-md:bg-none bg-alicatado bg-no-repeat bg-cover bg-left ">
 			<div class=" col-start-1 row-start-2  bg-white p-10 max-md:p-5 max-sm:bg-transparent max-md:bg-transparent">
 				<h2 class=" mb-12 max-sm:mb-5 font-custom font-extrabold text-5xl max-sm:text-3xl max-md:text-center  text-orange-500 ">Alicatado y Solado</h2>
@@ -56,23 +56,23 @@ import MasInformacion from '../components/MasInformacion.astro'
 			
 		</div>
 
-		<div class=" grid grid-cols-2 max-md:flex max-md:flex-col ">
-			<div class=" bg-white max-sm:p-5 px-8 pb-8 max-sm:mx-auto max-sm:mb-20">
+		<div class=" grid grid-cols-2 max-md:flex max-md:flex-col gap-10 ">
+			<div class=" bg-white max-sm:p-5 px-8 pb-8 max-sm:mx-auto max-sm:mb-5">
 				<h2 class="  mb-12 max-sm:mb-5 font-custom font-extrabold text-5xl max-sm:text-3xl max-md:text-4xl max-md:text-center text-orange-500">Electricidad y Fontaneria</h2>
 				<p class=" font-custom font-extralight leading-7">En Reformas Nour, nos dedicamos a iluminar y abastecer tus espacios con servicios eléctricos y de fontanería que van más allá de la funcionalidad básica. </p>
-				<p class="font-custom font-extralight mt-2 mb-3 leading-7">Nos consideramos artesanos de la comodidad, fusionando la tecnología moderna con prácticas sostenibles para crear entornos que no solo funcionan eficientemente, sino que también mejoran tu calidad de vida diaria.</p>
+				<p class="font-custom font-extralight mt-2 mb-3 leading-7">Nos consideramos artesanos de la comodidad, sino que también mejoran tu calidad de vida diaria.</p>
 				<MasInformacion/>
-				<video class="h-[20rem] max-md:h-auto mt-10  object-cover w-full" autoplay muted loop>
-					<source src="/fontaneria.mp4">
-				</video>
 			</div>
-			<div class=" bg-white px-8 pb-8 max-md:p-5  ">
+			<video class="h-[20rem] max-md:h-auto  object-cover w-full" autoplay muted loop>
+				<source src="/fontaneria.mp4">
+			</video>
+			<div class=" bg-white px-8 pb-8 max-md:p-5 max-md:mt-20 ">
 				<h2 class="  mb-12 max-sm:mb-5 font-custom font-extrabold text-5xl max-md:text-4xl  max-sm:text-3xl max-md:text-center text-orange-500">Colocación de Pladur</h2>
 				<p class=" font-custom font-extralight leading-7">En Reformas Nour ofrecemos servicios de escayola y colocación de Pladur que van más allá de simples elementos arquitectónicos, brindando a tus espacios un toque de elegancia incomparables. </p>
-				<p class="font-custom font-extralight mt-2 mb-3 leading-7">Nuestra dedicación a la excelencia se refleja en la maestría con la que abordamos cada proyecto, transformando tus ideas en piezas de arte arquitectónico que realzan la belleza y funcionalidad de tus ambientes.</p>
+				<p class="font-custom font-extralight mt-2 mb-3 leading-7">Nuestra dedicación a la excelencia se refleja en la maestría con la que abordamos cada proyecto.</p>
 				<MasInformacion/>
-				<img class="h-[20rem] w-full mt-10 max-md:h-auto" src="/pladur.webp" alt="Imagen de Pladur">
 			</div>
+			<img class="h-[20rem] w-full mt-10 max-md:h-auto object-cover" src="/pladur.webp" alt="Imagen de Pladur">
 		</div>
 
 	</main>
