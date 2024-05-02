@@ -1,3 +1,37 @@
-<a class=" text-lg mt-4 px-4 py-1 border border-orange-500 text-orange-500 hover:bg-orange-500 hover:text-white duration-300 " href="/formulario">Informacion
+<a class="ov-btn-slide-right text-lg mt-4 px-4 py-1 border border-orange-500 text-orange-500 hover:scale-110 hover:text-white duration-300 " href="/formulario">Informacion
     <slot/>
 </a>
+
+<style>
+
+.ov-btn-slide-right {
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  display: inline-block;
+}
+
+
+.ov-btn-slide-right::after {
+  content: "";
+  background: #f97316;
+  position: absolute;
+  z-index: -1;
+  padding: 16px 20px;
+  display: block;
+  top: 0;
+  bottom: 0;
+  left: 100%;
+  right: -100%;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+.ov-btn-slide-right:hover::after {
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-transition: all 0.35s;
+  transition: all 0.35s;
+}
+</style>
